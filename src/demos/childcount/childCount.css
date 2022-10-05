@@ -1,0 +1,85 @@
+.parent {
+  min-height: 260px;
+}
+.parent:after {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  font-size: 72px;
+  transform: translateX(-50%);
+}
+.parent:after {
+  content: '😶';
+}
+.parent:has(:nth-child(1):last-child):after {
+  content: '🙁';
+}
+.parent:has(:nth-child(2):last-child):after {
+  content: '😕';
+}
+.parent:has(:nth-child(3):last-child):after {
+  content: '😐';
+}
+.parent:has(:nth-child(4):last-child):after {
+  content: '🤨';
+}
+.parent:has(:nth-child(5):last-child):after {
+  content: '🙂';
+}
+.parent:has(:nth-child(6):last-child):after {
+  content: '😌';
+}
+.parent:has(:nth-child(7):last-child):after {
+  content: '😄';
+}
+.parent:has(:nth-child(8):last-child):after {
+  content: '😃';
+}
+.parent:has(:nth-child(9):last-child):after {
+  content: '😆';
+}
+.parent:has(:nth-child(10):last-child):after {
+  content: '😂';
+}
+.parent:has(:nth-child(11):last-child):after {
+  content: '😳';
+}
+.parent:has(:nth-child(12):last-child):after {
+  content: '🤯';
+}
+.parent:has(:nth-child(13):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(14):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(15):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(16):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(17):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(18):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(19):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(20):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(21):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(22):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(23):last-child):after {
+  content: '😵';
+}
+.parent:has(:nth-child(24):last-child):after {
+  content: '😵';
+}
