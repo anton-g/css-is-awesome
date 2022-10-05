@@ -1,10 +1,12 @@
 import Hover from './demos/hover/Hover';
+import Tabs from './demos/tabs/Tabs';
 
 export default function App() {
   return (
     <div className="mx-auto flex h-full items-center justify-center p-4 text-center">
       {/* <Intro /> */}
-      <Hover />
+      {/* <Hover /> */}
+      <Tabs />
     </div>
   );
 }

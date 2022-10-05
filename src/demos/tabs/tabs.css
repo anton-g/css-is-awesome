@@ -1,0 +1,61 @@
+.tabs {
+  width: 60ch;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+.tabs .tab-panel {
+  display: none;
+  color: black;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  min-height: 270px;
+}
+.tabs .tab-panel * {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.tabs .tab-panel > * + * {
+  margin-block-start: 1.5rem;
+}
+.tabs .tab-panel p {
+  line-height: 1.5;
+}
+.tabs .tab-panel a:focus {
+  outline: 2px dashed black;
+}
+.tabs .tab-group {
+  display: flex;
+}
+.tabs input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+.tabs label {
+  cursor: pointer;
+  padding-inline: 3ch;
+  padding-block: 1ch;
+  margin: 0;
+}
+.tabs input:checked + label {
+  background: white;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  color: black;
+}
+.tabs input:focus-visible + label {
+  outline: 2px dashed black;
+  outline-offset: -3px;
+}
+.tabs:has([value='Tab 1']:checked) .tab-panel[data-tab='Tab 1'] {
+  border-top-left-radius: 0;
+  display: block;
+}
+.tabs:has([value='Tab 2']:checked) .tab-panel[data-tab='Tab 2'] {
+  display: block;
+}
+.tabs:has([value='Tab 3']:checked) .tab-panel[data-tab='Tab 3'] {
+  display: block;
+}

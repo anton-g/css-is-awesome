@@ -15,7 +15,7 @@ const Snippet = ({ code, lang }: { code: string; lang: string }) => {
 
   return (
     <pre className="bg-white">
-      <code className={`language-${lang}`} style={{ fontSize: '24px' }}>
+      <code className={`language-${lang}`} style={{ fontSize: '22px' }}>
         {code}
       </code>
     </pre>
