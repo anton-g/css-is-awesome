@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background-color: #fff;
-  --text-color: #111;
+  --background-color: rgb(20, 20, 20);
+  --text-color: rgb(230, 230, 230);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: rgb(20, 20, 20);
-    --text-color: rgb(230, 230, 230);
-  }
+html,
+#root {
+  height: 100%;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  height: 100%;
 }

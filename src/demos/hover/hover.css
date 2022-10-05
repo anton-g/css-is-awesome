@@ -1,0 +1,74 @@
+.grid {
+  width: 75vmin;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid_item {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2s;
+}
+
+.grid:has(.grid_item:hover) .grid_item:not(:hover) {
+  opacity: 0.15;
+}
+
+.grid_item:hover {
+  transform: scale(1.5);
+}
+
+.grid_item:nth-child(1) {
+  background-image: url('/foil.png');
+}
+.grid_item:nth-child(2) {
+  background-image: url('/barbershop.jpeg');
+}
+.grid_item:nth-child(3) {
+  background-image: url('/bollhav.jpeg');
+}
+.grid_item:nth-child(4) {
+  background-image: url('/codeinthedark.jpeg');
+}
+.grid_item:nth-child(5) {
+  background-image: url('/glitter.png');
+}
+.grid_item:nth-child(6) {
+  background-image: url('/ie.png');
+}
+.grid_item:nth-child(7) {
+  background-image: url('/lego.jpeg');
+}
+.grid_item:nth-child(8) {
+  background-image: url('/tattoo-2.jpeg');
+}
+.grid_item:nth-child(9) {
+  background-image: url('/tent.png');
+}
+.grid_item:nth-child(10) {
+  background-image: url('/troll.png');
+}
+.grid_item:nth-child(11) {
+  background-image: url('/billy.png');
+}
+.grid_item:nth-child(12) {
+  background-image: url('/cloud.png');
+}
+.grid_item:nth-child(13) {
+  background-image: url('/jord.png');
+}
+.grid_item:nth-child(14) {
+  background-image: url('/silentdisco.jpeg');
+}
+.grid_item:nth-child(15) {
+  background-image: url('/tetris.png');
+}
+.grid_item:nth-child(16) {
+  background-image: url('/pingis.jpeg');
+}
