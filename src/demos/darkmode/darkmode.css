@@ -1,0 +1,4 @@
+:root:has(.theme-toggle:checked) {
+  --background-color: rgb(230, 230, 230);
+  --text-color: rgb(20, 20, 20);
+}

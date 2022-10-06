@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ChildCount from './demos/childcount/ChildCount';
+import DarkMode from './demos/darkmode/DarkMode';
 import FormError from './demos/error/FormError';
 import Hover from './demos/hover/Hover';
 import Other from './demos/other/Other';
@@ -8,7 +9,16 @@ import Tabs from './demos/tabs/Tabs';
 export default function App() {
   const [stage, setStage] = useState(0);
 
-  const parts = [Intro, Hover, Tabs, Other, ChildCount, FormError, Thanks];
+  const parts = [
+    DarkMode,
+    Intro,
+    Hover,
+    Tabs,
+    Other,
+    ChildCount,
+    FormError,
+    Thanks,
+  ];
 
   const Current = parts[stage];
 
