@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ChildCount from './demos/childcount/ChildCount';
+import BasicContainer from './demos/container/BasicContainer';
 import DarkMode from './demos/darkmode/DarkMode';
 import FormError from './demos/error/FormError';
 import Hover from './demos/hover/Hover';
@@ -10,13 +11,14 @@ export default function App() {
   const [stage, setStage] = useState(0);
 
   const parts = [
-    DarkMode,
+    BasicContainer,
     Intro,
     Hover,
-    Tabs,
-    Other,
-    ChildCount,
     FormError,
+    Other,
+    Tabs,
+    ChildCount,
+    DarkMode,
     Thanks,
   ];
 

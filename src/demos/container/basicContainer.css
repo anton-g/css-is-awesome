@@ -1,0 +1,47 @@
+.basic-container li {
+  container-type: inline-size;
+}
+
+@container (min-width: 45ch) {
+  .basic-container li span {
+    background-color: rebeccapurple !important;
+
+    /* &::after {
+      content: 'medium' !important;
+      font-size: 2rem !important;
+    } */
+  }
+}
+
+@container (min-width: 70ch) {
+  .basic-container li span {
+    background-color: dodgerblue !important;
+
+    /* &::after {
+      content: 'large' !important;
+      font-size: 3rem !important;
+    } */
+  }
+}
+
+.basic-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 1rem;
+  width: min(120ch, 100vw - 2rem);
+}
+
+.basic-container li {
+  flex: 1 1 30ch;
+  height: 100px;
+  display: flex;
+}
+
+.basic-container li span {
+  height: 100px;
+  width: 100%;
+  background-color: gold;
+}
