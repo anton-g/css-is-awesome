@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ChildCount from './demos/childcount/ChildCount';
 import BasicContainer from './demos/container/BasicContainer';
+import ContainerCard from './demos/containercard/ContainerCard';
 import DarkMode from './demos/darkmode/DarkMode';
 import FormError from './demos/error/FormError';
 import Hover from './demos/hover/Hover';
@@ -11,14 +12,15 @@ export default function App() {
   const [stage, setStage] = useState(0);
 
   const parts = [
-    BasicContainer,
+    ContainerCard,
     Intro,
-    Hover,
     FormError,
     Other,
+    Hover,
     Tabs,
     ChildCount,
     DarkMode,
+    BasicContainer,
     Thanks,
   ];
 
@@ -55,7 +57,7 @@ function Intro() {
       </h1>
       <p className="mt-24 mb-8 text-6xl">Anton Gunnarsson</p>
       <p className="my-8 text-4xl">Mpya Digital</p>
-      <p className="my-8 text-4xl">www.asdf.pizza</p>
+      <p className="my-8 text-4xl">www.asdf.pizza 🇸🇪</p>
     </div>
   );
 }

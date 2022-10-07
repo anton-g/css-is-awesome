@@ -23,19 +23,27 @@ const Snippet = ({ code, lang }: { code: string; lang: string }) => {
 };
 
 const DemoContext = createContext(false);
-const Demo = ({ children }: { children: ReactNode }) => {
+const Demo = ({
+  hideSource,
+  children,
+}: {
+  children: ReactNode;
+  hideSource?: boolean;
+}) => {
   const [showSource, setShowSource] = useState(false);
 
   return (
     <DemoContext.Provider value={showSource}>
       <div className="flex h-full flex-col justify-center">
-        <div className="mt-auto">{children}</div>
-        <button
-          className="mx-auto mt-auto w-fit rounded border-b-4 border-gray-700 bg-gray-500 py-2 px-4 font-bold text-white hover:border-gray-500 hover:bg-gray-400"
-          onClick={() => setShowSource(!showSource)}
-        >
-          {showSource ? 'Demo' : 'Source'}
-        </button>
+        <div className={hideSource ? '' : `mt-auto`}>{children}</div>
+        {!hideSource && (
+          <button
+            className="mx-auto mt-auto w-fit rounded border-b-4 border-gray-700 bg-gray-500 py-2 px-4 font-bold text-white hover:border-gray-500 hover:bg-gray-400"
+            onClick={() => setShowSource(!showSource)}
+          >
+            {showSource ? 'Demo' : 'Source'}
+          </button>
+        )}
       </div>
     </DemoContext.Provider>
   );
