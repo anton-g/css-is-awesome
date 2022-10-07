@@ -1,10 +1,7 @@
 import './containerCard.css';
 import { Demo } from '../../Demo';
-import { useState } from 'react';
 
 export default function ContainerCard() {
-  const [count, setCount] = useState(6);
-
   return (
     <Demo hideSource>
       <Demo.Implementation>

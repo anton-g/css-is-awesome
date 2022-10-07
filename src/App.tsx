@@ -6,13 +6,13 @@ import DarkMode from './demos/darkmode/DarkMode';
 import FormError from './demos/error/FormError';
 import Hover from './demos/hover/Hover';
 import Other from './demos/other/Other';
+import Peter from './demos/peter/Peter';
 import Tabs from './demos/tabs/Tabs';
 
 export default function App() {
   const [stage, setStage] = useState(0);
 
   const parts = [
-    ContainerCard,
     Intro,
     FormError,
     Other,
@@ -21,6 +21,8 @@ export default function App() {
     ChildCount,
     DarkMode,
     BasicContainer,
+    ContainerCard,
+    Peter,
     Thanks,
   ];
 
