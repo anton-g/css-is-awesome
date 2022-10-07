@@ -14,6 +14,7 @@ export default function App() {
 
   const parts = [
     Intro,
+    Image,
     FormError,
     Other,
     Hover,
@@ -76,6 +77,14 @@ function Intro() {
       <p className="mt-24 mb-8 text-6xl">Anton Gunnarsson</p>
       <p className="my-8 text-4xl">Mpya Digital</p>
       <p className="my-8 text-4xl">www.asdf.pizza 🇸🇪</p>
+    </div>
+  );
+}
+
+function Image() {
+  return (
+    <div>
+      <img src="/awesome.jpg" />
     </div>
   );
 }

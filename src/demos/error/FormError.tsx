@@ -9,6 +9,7 @@ export default function FormError() {
           <div className="flex items-center gap-5 text-4xl">
             <label htmlFor="email">Email</label>
             <input
+              autoComplete="off"
               className="form-control m-0 w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-4xl font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
               id="email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
