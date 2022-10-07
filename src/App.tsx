@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ChildCount from './demos/childcount/ChildCount';
 import BasicContainer from './demos/container/BasicContainer';
 import ContainerCard from './demos/containercard/ContainerCard';
@@ -25,6 +25,22 @@ export default function App() {
     Peter,
     Thanks,
   ];
+
+  useEffect(() => {
+    function handleKeyPress(e: KeyboardEvent) {
+      if (e.key === ' ' || e.key === 'ArrowRight') {
+        if (stage < parts.length - 1) {
+          setStage((s) => s + 1);
+        }
+      }
+      if (e.key === 'ArrowLeft') {
+        if (stage > 0) setStage((s) => s - 1);
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [parts, stage]);
 
   const Current = parts[stage];
 
@@ -68,9 +84,14 @@ function Thanks() {
   return (
     <div>
       <h1 className="text-8xl">Thank you!</h1>
-      <p className="mt-24 mb-8 text-6xl">Anton Gunnarsson</p>
-      <p className="my-8 text-4xl">Mpya Digital</p>
+      <p className="my-8 text-4xl">css-fuck-yeah.netlify.app</p>
+      <p className="my-8 text-4xl">github.com/anton-g/css-is-awesome</p>
       <p className="my-8 text-4xl">@awnton</p>
+      <p className="my-8 text-4xl">antongunnarsson.com</p>
+      <p className="text-l my-20 mx-auto max-w-lg text-center">
+        Shoutout to Ahmad Shadeed, Jhey Thompkins & Stephanie Eckles for
+        inspiration. Go check them out :)
+      </p>
     </div>
   );
 }
